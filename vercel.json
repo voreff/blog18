@@ -1,0 +1,34 @@
+{
+  "github": {
+    "silent": true
+  },
+  "functions": {
+    "api/api.php": {
+      "runtime": "@vercel/php@1.0.0"
+    },
+    "api/captcha.php": {
+      "runtime": "@vercel/php@1.0.0"
+    },
+    "api/config.php": {
+      "runtime": "@vercel/php@1.0.0"
+    },
+    "api/email-verification.php": {
+      "runtime": "@vercel/php@1.0.0"
+    },
+    "api/newsletter.php": {
+      "runtime": "@vercel/php@1.0.0"
+    },
+    "api/realtime.php": {
+      "runtime": "@vercel/php@1.0.0"
+    },
+    "api/security-config.php": {
+      "runtime": "@vercel/php@1.0.0"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    }
+  ]
+}
